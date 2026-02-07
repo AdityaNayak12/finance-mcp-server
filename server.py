@@ -22,7 +22,7 @@ def forecast(csv_path: str, months: int = 6) -> dict:
     return forecast_financials(csv_path, months)
 
 @mcp.tool()
-def scenario_simulation(
+def scenario_simulation_mcp(
     csv_path: str,
     revenue_change_pct: float = 0,
     expense_change_pct: float = 0
